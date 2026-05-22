@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- Top Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+            <div class="container-lg">
+                <a class="navbar-brand fw-bold fs-5" asp-area="" asp-page="/Index">VnE-GO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-lg-inline-flex justify-content-start">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Thời sự</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Thế giới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Kinh doanh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Khoa học công nghệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Góc nhìn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Spotlight</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Bất động sản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Sức khỏe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Giải trí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-500" href="#">Thể thao</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-lg">
+        <main role="main" class="py-4">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5 pt-4">
+        <div class="container-lg">
+            <div class="row pb-3">
+                <div class="col-md-3">
+                    <h6>Về VnE-GO</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Quảng cáo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Dịch vụ</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Chính sách</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>&copy; 2026 VnE-GO</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

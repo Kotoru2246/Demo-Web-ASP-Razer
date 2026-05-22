@@ -1,0 +1,92 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "VnE-GO - News & Information";
+}
+
+<!-- Featured Article Section -->
+<section class="featured-article mb-4">
+    <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+            <img src="~/images/featured-article.svg" alt="Featured Article" class="img-fluid rounded-lg shadow-sm">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="featured-title">Ưu tiên tài định cư trước khi triển khai Trục cảnh quan sông Hồng</h2>
+            <p class="featured-content">
+                Hà Nội sẽ ưu tiên xây dựng các khu tái định cư trước khi triển khai Trục Đại lộ cảnh quan sông Hồng - dự án hơn 11.400 ha, liên quan khoảng 247.000 dân ven sông, thực hiện giai đoạn 2026-2038.
+            </p>
+            <p class="featured-time">1h trước</p>
+        </div>
+    </div>
+</section>
+
+<!-- News Grid Section -->
+<section class="news-section">
+    <!-- Two Images Side by Side + Sidebars Below -->
+    <div class="row g-4 mb-4">
+        <!-- Article 1 Image -->
+        <div class="col-lg-6">
+            <div class="news-card-image">
+                <div class="news-image-wrapper">
+                    <img src="~/images/news-1.svg" alt="News 1" class="news-image">
+                    <div class="news-image-overlay">
+                        <h3 class="overlay-title">Hà Nội giải phóng mặt bằng cho hơn 1.400 dự án</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article 2 Image -->
+        <div class="col-lg-6">
+            <div class="news-card-image">
+                <div class="news-image-wrapper">
+                    <img src="~/images/news-2.svg" alt="News 2" class="news-image">
+                    <div class="news-image-overlay">
+                        <h3 class="overlay-title">TP HCM siết kiểm soát người nhập cảnh phòng Ebola</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Descriptions Below Images -->
+    <div class="row g-4 mb-4">
+        <div class="col-lg-6">
+            <div class="news-body">
+                <p class="news-excerpt">Dự án phát triển cơ sở hạ tầng để đón tiếp sự phát triển kinh tế của thành phố...</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="news-body">
+                <p class="news-excerpt">Các biện pháp phòng chống dịch bệnh được tăng cường tại các cửa khẩu chính...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebars Below -->
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="sidebar-card sidebar-card-fixed">
+                <h4 class="sidebar-title text-danger">Góc nhìn</h4>
+                <h5 class="sidebar-article-title">'Bốc lột' trên YouTube</h5>
+                <p class="sidebar-excerpt">Khi có máy Content ID của YouTube bị trục lợi, nhiều nghệ sĩ...</p>
+                <div class="sidebar-author mt-auto">
+                    <small class="text-muted">Hoàng Hà</small>
+                    <span class="badge bg-secondary ms-2">24</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="sidebar-card sidebar-card-fixed">
+                <h4 class="sidebar-title text-danger">Bình luận</h4>
+                <h5 class="sidebar-article-title">Đầu tư bất động sản thông minh</h5>
+                <p class="sidebar-excerpt">Cách chọn lựa dự án phù hợp với nhu cầu tài chính và mục tiêu dài hạn...</p>
+                <div class="sidebar-author mt-auto">
+                    <small class="text-muted">Nguyễn Minh</small>
+                    <span class="badge bg-secondary ms-2">18</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
